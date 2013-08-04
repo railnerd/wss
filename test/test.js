@@ -18,6 +18,6 @@ srvr.on('set', function (s,params) {
 });
 
 srvr.on('get', function (s,params) {
-    console.log("set: " + util.inspect(params));
+    console.log("get: " + util.inspect(params));
     s.send(JSON.stringify({'update' : params}));
 });
